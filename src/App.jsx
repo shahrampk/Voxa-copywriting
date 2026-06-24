@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router";
 import PublicRoutes from "./routes/public.routes";
-
+import Layout from "./layout/Layout";
+import { NoPage } from "./pages";
 function App() {
   const allRoutes = [...PublicRoutes];
   console.log(allRoutes);

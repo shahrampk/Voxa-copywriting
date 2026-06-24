@@ -1,1 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @import "tailwindcss";
+@theme {
+  /* Fonts */
+  --font-Inter: "Inter", sans-serif;
+
+  /* Primary colors */
+  --color-app: #131314; /* Deep Navy   — app / page*/
+  --color-surface: #232325; /* Surface Navy — cards, panels, modals, inputs */
+  --color-sidebar: #1C1B1C; /* Sidebar Navy — slightly darker for sidebar depth */
+
+  /* --- Borders & Dividers --- */
+  --color-border: #2d3f5a; /* All borders, table dividers, input borders */
+
+  /* --- Brand / Accent --- */
+  --color-accent: #3b82f6; /* Electric Blue — active nav, links, focus rings, CTA bg */
+  --color-accent-deep: #1d4ed8; /* Deep Blue     — button labels, link text, heading accents */
+
+  /* --- Text --- */
+  --color-text-primary: #ffffff; /* White       — body text & headlines on dark surfaces */
+  --color-text-secondary: #e2e8f0; /* Light Gray  — secondary labels, descriptions, timestamps */
+  --color-text-muted: #94a3b8; /* Muted Gray  — placeholders, footer text, inactive nav */
+
+  /* --- Success --- */
+  --color-success: #16a34a; /* Success Green — badges, toasts, positive metrics */
+  --color-success-light: #dcfce7; /* Success Light — banners, Published status chip bg */
+
+  /* --- Error --- */
+  --color-error: #dc2626; /* Error Red   — toasts, failed banners, delete text, validation */
+  --color-error-light: #fee2e2; /* Error Light — banner bg, destructive modal bg */
+
+  /* --- Warning --- */
+  --color-warning: #d97706; /* Warning Amber — limit warnings, Draft badges, upgrade nudges */
+  --color-warning-light: #fef3c7; /* Warning Light — status chip bg, onboarding indicators */
+
+  /* --- Pro / Premium --- */
+  --color-pro: #7c3aed; /* Purple      — Pro badge, Expert cards, upgrade CTAs */
+  --color-pro-light: #d8c4fa; /* Purple Light — Expert card bg, Pro feature highlights */
+
+  /* --- New Feature --- */
+  --color-new: #0d9488; /* Teal        — New feature badges, What's new. Use sparingly. */
+
+  /* Gradient */
+  /* primary-gradient: linear-gradient(135deg, #7c3aed, #3b82f6); */
+}

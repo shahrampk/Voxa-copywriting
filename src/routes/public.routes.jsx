@@ -1,4 +1,4 @@
-import { Dashboard, History, Settings, StyleDocx, Workspace } from "../pages";
+import { Dashboard, History, Hooks, Settings, StyleDocx, Workspace } from "../pages";
 
 const PublicRoutes = [
   {
@@ -16,6 +16,9 @@ const PublicRoutes = [
   {
     route: "/settings",
     element: <Settings />,
+  },{
+    route: "/hooks",
+    element: <Hooks />,
   },
   {
     route: "/workspace",
