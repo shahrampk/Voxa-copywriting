@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <aside
       id="sidebar"
-      className="bg-sidebar w-55 p-4 flex flex-col justify-between gap-7"
+      className="bg-sidebar w-55 p-4 flex flex-col justify-between gap-5"
     >
       <Logo />
       <AsideNavbar navLinks={navLinks} />

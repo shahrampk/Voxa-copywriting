@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 
 const AsideNavbar = ({navLinks}) => {
   return (
-    <nav className="h-full">
+    <nav className="h-full bg-accen">
       <ul className="flex flex-col gap-1">
         {navLinks.map((navLink, index) => (
           <li key={index}>

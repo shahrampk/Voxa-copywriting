@@ -3,7 +3,7 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <div className="flex gap-2 items-center">
+    <div className="flex gap-2 items-center pl-2 pt-2">
       <div className="h-9 w-9  bg-pro-light rounded-lg flex items-center justify-center">
         <Zap fill="#7c3aed" stroke="none" size={28} />
       </div>

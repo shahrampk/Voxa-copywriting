@@ -42,5 +42,5 @@
   --color-new: #0d9488; /* Teal        — New feature badges, What's new. Use sparingly. */
 
   /* Gradient */
-  /* primary-gradient: linear-gradient(135deg, #7c3aed, #3b82f6); */
+  --background-image-primary-gradient: linear-gradient(135deg, #7c3aed, #3b82f6);
 }
