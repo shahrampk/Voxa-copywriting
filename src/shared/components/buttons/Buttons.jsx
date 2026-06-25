@@ -1,28 +1,44 @@
-export const PrimaryBtn = ({ value }) => {
+export const PrimaryBtn = ({ value, icon, onClickFn }) => {
   return (
-    <button className="cursor-pointer bg-primary-gradient text-white py-1 px-4 rounded-lg hover:opacity-90 active:scale-95">
+    <button
+      onClick={onClickFn}
+      className={`"cursor-pointer bg-primary-gradient text-white py-2 px-4 rounded-lg hover:opacity-90 active:scale-95 text-nowrap w-full font-semibold flex items-center ${icon ? "flex items-center gap-2" : ""}`}
+    >
       {value}
+      {icon ? icon : ""}
     </button>
   );
 };
-export const SecondaryBtn = ({ value }) => {
+export const SecondaryBtn = ({ value, icon, onClickFn }) => {
   return (
-    <button className="cursor-pointer bg-surface text-white/90 transition-all duration-150 py-1 px-4 rounded-lg border-border border hover:border-accent active:scale-95">
+    <button
+      onClick={onClickFn}
+      className={`text-nowrap cursor-pointer bg-surface text-secondary transition-all duration-150 py-2 px-4 rounded-lg border-border border hover:bg-accent-deep active:scale-95 w-full font-semibold ${icon ? "flex items-center gap-2" : ""}`}
+    >
       {value}
+      {icon ? icon : ""}
     </button>
   );
 };
-export const GhostBtn = ({ value }) => {
+export const GhostBtn = ({ value, icon, onClickFn }) => {
   return (
-    <button className="cursor-pointer bg-transparent text-accent-deep transition-all duration-150 py-1 px-4 rounded-lg hover:bg-accent/20">
+    <button
+      onClick={onClickFn}
+      className={`text-nowrap cursor-pointer bg-transparent text-accent-deep transition-all duration-150 py-2 px-4 rounded-lg hover:bg-accent/20 w-full font-semibold ${icon ? "flex items-center gap-2" : ""}`}
+    >
       {value}
+      {icon ? icon : ""}
     </button>
   );
 };
-export const DangerBtn = ({ value }) => {
+export const DangerBtn = ({ value, icon, onClickFn }) => {
   return (
-    <button className="cursor-pointer text-error hover:bg-error/20 py-1 px-4 rounded-lg transition-all duration-150">
+    <button
+      onClick={onClickFn}
+      className={`text-nowrap cursor-pointer text-error hover:bg-error/20 py-2 px-4 rounded-lg transition-all duration-150 w-full font-semibold ${icon ? "flex items-center gap-2" : ""}`}
+    >
       {value}
+      {icon ? icon : ""}
     </button>
   );
 };

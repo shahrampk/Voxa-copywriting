@@ -5,16 +5,15 @@ import Header from "./Header";
 
 const Layout = () => {
   return (
-    <div
-      id="app-container"
-      className="font-Inter text-white bg-app flex flex-col md:flex-row min-h-screen gap-2 "
-    >
+    <div id="app-container" className="flex flex-col md:flex-row h-screen">
       <Navbar />
 
-      <main id="main-content" className="p-4 w-full flex flex-col gap-5">
+      <main id="main-content" className="w-full overflow-scroll h-full">
         <Header />
         {/* Here you can render the content of the selected page */}
-        <Outlet />
+        <div className="">
+          <Outlet />
+        </div>
       </main>
     </div>
   );

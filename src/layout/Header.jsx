@@ -3,7 +3,7 @@ import { PrimaryBtn, SecondaryBtn } from "../shared/components/buttons/Buttons";
 
 const Header = () => {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between border-b border-border/40 py-4 px-6">
       <Searchbar />
       <div>
         <SecondaryBtn value="Upgrade to pro" />

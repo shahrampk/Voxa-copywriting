@@ -4,7 +4,6 @@ import Layout from "./layout/Layout";
 import { NoPage } from "./pages";
 function App() {
   const allRoutes = [...PublicRoutes];
-  console.log(allRoutes);
 
   return (
     <>

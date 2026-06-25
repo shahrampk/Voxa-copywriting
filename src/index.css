@@ -8,7 +8,7 @@
   /* Primary colors */
   --color-app: #131314; /* Deep Navy   — app / page*/
   --color-surface: #232325; /* Surface Navy — cards, panels, modals, inputs */
-  --color-sidebar: #1C1B1C; /* Sidebar Navy — slightly darker for sidebar depth */
+  --color-sidebar: #1c1b1c; /* Sidebar Navy — slightly darker for sidebar depth */
 
   /* --- Borders & Dividers --- */
   --color-border: #2d3f5a; /* All borders, table dividers, input borders */
@@ -18,9 +18,9 @@
   --color-accent-deep: #1d4ed8; /* Deep Blue     — button labels, link text, heading accents */
 
   /* --- Text --- */
-  --color-text-primary: #ffffff; /* White       — body text & headlines on dark surfaces */
-  --color-text-secondary: #e2e8f0; /* Light Gray  — secondary labels, descriptions, timestamps */
-  --color-text-muted: #94a3b8; /* Muted Gray  — placeholders, footer text, inactive nav */
+  --color-primary: #ffffff; /* White       — body text & headlines on dark surfaces */
+  --color-secondary: #e2e8f0; /* Light Gray  — secondary labels, descriptions, timestamps */
+  --color-muted: #94a3b8; /* Muted Gray  — placeholders, footer text, inactive nav */
 
   /* --- Success --- */
   --color-success: #16a34a; /* Success Green — badges, toasts, positive metrics */
@@ -42,5 +42,15 @@
   --color-new: #0d9488; /* Teal        — New feature badges, What's new. Use sparingly. */
 
   /* Gradient */
-  --background-image-primary-gradient: linear-gradient(135deg, #7c3aed, #3b82f6);
+  --background-image-primary-gradient: linear-gradient(
+    135deg,
+    #7c3aed,
+    #3b82f6
+  );
+  /* ✅ From solid app color to transparent */
+  --background-image-black-gradient: radial-gradient(
+    circle,
+    transparent,
+    #000
+  );
 }
