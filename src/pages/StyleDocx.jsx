@@ -6,7 +6,8 @@ import {
   ProDocsCard,
 } from "../features/styleDocument/components";
 import { GhostBtn } from "../shared/components/buttons/Buttons";
-import { ArrowRight, ArrowUp, TrendingUp } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUp, TrendingUp } from "lucide-react";
+import HeadingBox from "../shared/components/HeadingBox";
 
 const StyleDocx = () => {
   let allPosts = [
@@ -121,43 +122,23 @@ const StyleDocx = () => {
       id="style-document"
       className="py-4 px-6 flex flex-col gap-7 overflow-y-scroll"
     >
-      <div
-        id="heading-box"
-        className="flex items-center justify-between w-full"
-      >
-        <PageHeading
-          heading="My Documents"
-          subHeading="Custom brand voices and personal style rules"
-        />
-        <div>
-          {allPosts.length > 4 && !showAll && (
-            <GhostBtn
-              onClickFn={() => setShowAll(true)}
-              value="View All"
-              icon={<ArrowRight size={20} />}
-            />
-          )}
-        </div>
-      </div>
-
-      <section
-        id="custom-docs-section"
-        className="flex flex-col items-center gap-5"
-      >
+      <HeadingBox
+        heading="My Documents"
+        subHeading="Custom brand voices and personal style rules"
+        button={
+          <GhostBtn
+            onClickFn={() => setShowAll((prev) => !prev)}
+            value={!showAll ? "View All" : "View less"}
+            icon={!showAll ? <ArrowDown size={20} /> : <ArrowUp size={20} />}
+          />
+        }
+      />
+      <section id="custom-docs-section">
         <div id="custom-docs-container" className="grid grid-cols-4 gap-5">
           {visiblePosts.map((post) => (
             <CustomDocsCard key={post.id} post={post} />
           ))}
           <AddCustomDocs />
-        </div>
-        <div>
-          {showAll && (
-            <GhostBtn
-              onClickFn={() => setShowAll(false)}
-              value="Show Less"
-              icon={<ArrowUp size={20} />}
-            />
-          )}
         </div>
       </section>
       <section id="expert-docs-container" className="flex flex-col gap-5">
