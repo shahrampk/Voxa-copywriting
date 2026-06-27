@@ -1,4 +1,4 @@
-import React from "react";
+
 import PageHeading from "./PageHeading";
 
 const HeadingBox = ({ heading, subHeading, button }) => {

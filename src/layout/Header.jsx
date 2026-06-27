@@ -1,5 +1,5 @@
 import Searchbar from "../features/search/Searchbar";
-import { PrimaryBtn, SecondaryBtn } from "../shared/components/buttons/Buttons";
+import { SecondaryBtn } from "../shared/components/buttons/Buttons";
 
 const Header = () => {
   return (

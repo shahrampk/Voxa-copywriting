@@ -1,8 +1,4 @@
-import React from "react";
-import {
-  PrimaryBtn,
-  SecondaryBtn,
-} from "../../../shared/components/buttons/Buttons";
+import { SecondaryBtn } from "../../../shared/components/buttons/Buttons";
 
 const CustomDocsCard = ({ post }) => {
   return (

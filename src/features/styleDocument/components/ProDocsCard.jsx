@@ -1,5 +1,3 @@
-import { TrendingUp } from "lucide-react"; // or any icon passed via props
-
 const ProDocsCard = ({
   title,
   description,
@@ -14,7 +12,7 @@ const ProDocsCard = ({
       <div className="relative h-35 overflow-hidden">
         <img
           src={
-            "https://img.magnific.com/premium-photo/many-old-books-bookshelf-library_129479-5503.jpg?semt=ais_hybrid&w=740&q=80"
+            bannerBg
           }
           alt={`${title}'s image`}
           className="absolute h-full w-full object-cover"

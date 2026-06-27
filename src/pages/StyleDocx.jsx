@@ -1,13 +1,12 @@
-import React, { useState } from "react";
-import PageHeading from "../shared/components/PageHeading";
 import {
   AddCustomDocs,
   CustomDocsCard,
   ProDocsCard,
 } from "../features/styleDocument/components";
 import { GhostBtn } from "../shared/components/buttons/Buttons";
-import { ArrowDown, ArrowRight, ArrowUp, TrendingUp } from "lucide-react";
+import { ArrowDown, ArrowUp, TrendingUp } from "lucide-react";
 import HeadingBox from "../shared/components/HeadingBox";
+import { useState } from "react";
 
 const StyleDocx = () => {
   let allPosts = [
@@ -141,7 +140,7 @@ const StyleDocx = () => {
           <AddCustomDocs />
         </div>
       </section>
-      <section id="expert-docs-container" className="flex flex-col gap-5">
+      <section id="expert-docs-container" className="grid grid-cols-4 gap-5">
         <h1 className="flex items-center gap-2">
           <span className="text-2xl font-bold text-primary mb-1">
             Voxa Expert Documents
@@ -156,7 +155,6 @@ const StyleDocx = () => {
             description="A high-velocity, persuasive tone designed for conversion. Heavy use of social proof and urgency triggers."
             tags={["Persuasive", "Data-First"]}
             icon={TrendingUp}
-            bannerBg="#0f3460"
             iconColor="#a78bfa"
           />
           <ProDocsCard
@@ -164,7 +162,6 @@ const StyleDocx = () => {
             description="A high-velocity, persuasive tone designed for conversion. Heavy use of social proof and urgency triggers."
             tags={["Persuasive", "Data-First"]}
             icon={TrendingUp}
-            bannerBg="#0f3460"
             iconColor="#a78bfa"
           />
           <ProDocsCard
@@ -172,7 +169,6 @@ const StyleDocx = () => {
             description="A high-velocity, persuasive tone designed for conversion. Heavy use of social proof and urgency triggers."
             tags={["Persuasive", "Data-First"]}
             icon={TrendingUp}
-            bannerBg="#0f3460"
             iconColor="#a78bfa"
           />
         </div>

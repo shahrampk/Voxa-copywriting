@@ -1,6 +1,4 @@
 import { Zap } from "lucide-react";
-import React from "react";
-
 const Logo = () => {
   return (
     <div className="flex gap-2 items-center pl-2 pt-2">

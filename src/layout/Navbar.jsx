@@ -8,7 +8,6 @@ import {
   History,
   LayoutGrid,
   MousePointerClick,
-  Settings,
   WandSparkles,
 } from "lucide-react";
 

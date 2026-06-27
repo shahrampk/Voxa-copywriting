@@ -1,6 +1,4 @@
-import React from "react";
-import { GhostBtn } from "../../../shared/components/buttons/Buttons";
-import { Copy, Heart, SquareArrowRightEnter } from "lucide-react";
+import { SquareArrowRightEnter } from "lucide-react";
 import HeartToggle from "../../../shared/components/buttons/HeartToggle";
 import CopyBtn from "../../../shared/components/buttons/CopyBtn";
 
