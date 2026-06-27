@@ -140,7 +140,7 @@ const StyleDocx = () => {
           <AddCustomDocs />
         </div>
       </section>
-      <section id="expert-docs-container" className="grid grid-cols-4 gap-5">
+      <section id="expert-docs-container" className="flex flex-col gap-5">
         <h1 className="flex items-center gap-2">
           <span className="text-2xl font-bold text-primary mb-1">
             Voxa Expert Documents

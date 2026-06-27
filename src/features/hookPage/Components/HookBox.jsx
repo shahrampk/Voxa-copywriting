@@ -6,7 +6,7 @@ const HookBox = ({ data }) => {
   return (
     <div
       id="hooks-box"
-      className="border border-border/80 max-w-md rounded-lg bg-surface/70 p-5 flex flex-col justify-between gap-5"
+      className="border border-border/50 max-w-md rounded-lg bg-surface/30 p-5 flex flex-col justify-between gap-5"
     >
       <div className="upper flex flex-col items-start gap-5">
         <div id="category-box">
@@ -22,8 +22,10 @@ const HookBox = ({ data }) => {
             "{data.hook}"
           </p>
           <div id="hook-tags">
-            {data.hookTags.map((tag) => (
-              <span className="mr-2 text-muted">#{tag}</span>
+            {data.hookTags.map((tag, index) => (
+              <span key={index} className="mr-2 text-muted">
+                #{tag}
+              </span>
             ))}
           </div>
         </div>

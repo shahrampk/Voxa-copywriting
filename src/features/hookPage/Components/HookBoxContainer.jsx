@@ -1,12 +1,12 @@
 
 import HookBox from "./HookBox";
-import { hookBoxDataArray } from "../../../Data/HooksData";
 
-const HookBoxContainer = () => {
+
+const HookBoxContainer = ({hooksData}) => {
   return (
     <section id="hooks-section" className="grid grid-cols-3 gap-5">
-      {hookBoxDataArray.map((data) => (
-        <HookBox data={data} />
+      {hooksData.map((data) => (
+        <HookBox key={data.id} data={data} />
       ))}
     </section>
   );
