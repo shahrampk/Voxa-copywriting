@@ -17,7 +17,7 @@ const HookBox = ({ data }) => {
         <div id="hook-description" className="flex flex-col gap-2">
           <p
             id="hook"
-            className="text-xl font-bold italic tracking-wide leading-snug"
+            className="text-xl font-bold italic tracking-wide leading-snug border-l-4 pl-3 border-pro"
           >
             "{data.hook}"
           </p>

@@ -30,7 +30,7 @@ const CustomDocsCard = ({ post }) => {
         </div>
       </div>
       <div id="card-CTA" className="w-full">
-        <SecondaryBtn value="Use in Workspace" color="#7c3aed" />
+        <SecondaryBtn value="Use in Workspace" color="#7c3aed" styles={'w-full'} />
       </div>
     </div>
   );

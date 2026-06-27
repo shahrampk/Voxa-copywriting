@@ -1,4 +1,5 @@
 import {
+  FilterHooks,
   HookBoxContainer,
   HooksPagePagination,
 } from "../features/hookPage/Components";
@@ -7,21 +8,26 @@ import HeadingBox from "../shared/components/HeadingBox";
 import { hookBoxDataArray } from "../Data/HooksData";
 import { useEffect, useState } from "react";
 const Hooks = () => {
-  const [hooksData, setHooksData] = useState([]);
+  const [hooksData, setHooksData] = useState(hookBoxDataArray.slice(1, 13));
   const hooksPerPage = 12;
   const totalPages = Math.ceil(hookBoxDataArray.length / hooksPerPage);
-  function onPageChange(currentPage) {
+  function sliceHooks(currentPage) {
     const hooksArr = hookBoxDataArray.slice(
       (currentPage - 1) * hooksPerPage,
       currentPage * hooksPerPage,
     );
-    console.log(hooksArr);
 
     setHooksData(hooksArr);
   }
-  useEffect(() => {
-    onPageChange(1);
-  }, []);
+
+  function filter(filterBy) {
+    const filteredHooks =
+      filterBy === "All Hooks"
+        ? hookBoxDataArray.slice(1, 13)
+        : hookBoxDataArray.filter((hook) => hook.hookCategory === filterBy);
+
+    setHooksData(filteredHooks);
+  }
   return (
     <div id="hooks-page" className="py-4 px-6 flex flex-col gap-7">
       <HeadingBox
@@ -29,6 +35,7 @@ const Hooks = () => {
         subHeading="Stop staring at a blank screen. Browse 500+ high-performing opening lines designed to stop the scroll."
         button={<PrimaryBtn value={"Generate Hooks"} />}
       />
+      <FilterHooks filterByFn={filter} hooksData={hookBoxDataArray} />
       <HookBoxContainer hooksData={hooksData} />
       <div id="Pagination-box" className="flex items-center justify-between">
         <div id="hooks-count">
@@ -39,7 +46,7 @@ const Hooks = () => {
           totalPages={totalPages}
           hooksData={hooksData}
           setHooksData={setHooksData}
-          onPageChange={onPageChange}
+          onPageChange={sliceHooks}
         />
       </div>
     </div>
